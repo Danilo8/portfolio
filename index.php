@@ -37,8 +37,6 @@
         .cover-container{background:url(img/background/cover2.jpg) no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
         #button{
             border: 1px solid;
-            border-color: #fff;
-            color: white;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -85,10 +83,10 @@
                                     <p style="font-family: 'Arimo', sans-serif;">A melhor escolha para desenvolver um site</p>
                                      <div>
                                         <button style="font-size: 12px" class="mr-1" id="button">
-                                            
+                                            Botão
                                         </button>
                                         <button style="font-size: 12px"  class="ml-1" id="button">
-                                            
+                                            Botão
                                         </button>
                                     </div>
                                 </div>
