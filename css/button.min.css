@@ -1,1 +1,1 @@
-#button{border:1px solid;text-align:center;text-decoration:none;display:inline-block;font-size:15px;margin:4px 2px;cursor:pointer;padding:20px 48px;background-color:transparent}#button:hover{box-shadow:3px 2px 20px 0 #000}
+#button{border:1px solid #000;text-align:center;text-decoration:none;display:inline-block;font-size:18px;margin:4px 2px;cursor:pointer;padding:20px 48px;color:#000;background-color:transparent}#button:hover{background-color:rgba(0,0,0,.2);box-shadow:3px 2px 20px 0 #000}
