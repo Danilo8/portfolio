@@ -18,6 +18,7 @@
 
         <!--CSS file-->
         <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/button.css">
 
         <!--JS file-->
         <script src="js/scroll.js"></script>
@@ -35,23 +36,12 @@
         * Definindo um Background para a tela
         */
         .cover-container{background:url(img/background/cover2.jpg) no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
-        #button{
-            border: 1px solid;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            margin: 4px 2px;
-            cursor: pointer;
-            padding: 10px 24px;
-            background-color: transparent;
-        }
     </style>
     <body style="font-family: 'Arimo', sans-serif;" data-spy="scroll" data-target="#menu" data-offset="0">
         <!--Cover Container-->
-        <div id="home" class="cover-container d-flex w-100 mx-0 flex-column">
+        <div id="home" class="cover-container d-flex w-100 h-100 mx-0 flex-column">
             <!--Header-->
-            <header style="" class="pt-1 pb-1 px-5 bg-dark fixed-top">
+            <header id="header" style="" class="pt-1 pb-1 px-5 fixed-top">
                 <div class="inner">
                     <!--Logo-->
                     <h2 style="cursor: pointer;" class="masthead-brand">
@@ -68,27 +58,24 @@
                 </div>
             </header><!--/Header-->
             <!--Carousel-->
-            <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div id="carousel" class="carousel slide mb-1" data-ride="carousel">
                 <!--Main-->
-                <main style="margin-bottom: 500px;margin-top: 15%;" role="main" class="cover mx-auto">
+                <main style="margin-top: 18%;margin-bottom: 15%" role="main" class="cover mx-auto">
                     <div id="carousel" class="carousel slide" data-ride="carousel">
                         <ol style="top: 150%" class="carousel-indicators">
                             <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="text-center text-dark" style="font-family: 'Russo One', sans-serif;color:;">
+                                <div class="text-center" style="font-family: 'Russo One', sans-serif;color:;">
                                     <h1 class="mb-0" style="font-size: 60px;">Danilo Gonçalves</h1>
                                     <p style="font-size: 30px;">Desenvolvedor Web</p>
-                                    <p style="font-family: 'Arimo', sans-serif;">A melhor escolha para desenvolver um site</p>
-                                     <div>
-                                        <button style="font-size: 12px" class="mr-1" id="button">
-                                            Botão
-                                        </button>
-                                        <button style="font-size: 12px"  class="ml-1" id="button">
-                                            Botão
-                                        </button>
-                                    </div>
+                                    <p class="text-body" style="font-family: 'Arimo', sans-serif;font-size: 18px;">
+                                        Criação de sites e sistemas web
+                                    </p>
+                                    <button id="button" class="mb-1" style="font-family: 'Arimo', sans-serif;">
+                                        CONSULTE-NOS
+                                    </button>
                                 </div>
                             </div>
                             
@@ -103,13 +90,37 @@
                         </a>
                     </div>
                 </main><!--/Main-->
-                <div id="servicos">
-
-                </div>
             </div><!--/Carousel-->
+            <nav style="position: absolute;top: 100%;" class="nav nav-masthead justify-content-center navbar-dark bg-dark w-100">
+                <span style="font-size: 25px;color: #fff;" class="navbar-text p-3">
+                    Está precisando de um site?
+                </span>
+                <button style="font-size: 14px;color: #fff;border: none;margin: 0" class="px-5 bg-danger" id="button">
+                    CONSULTE-NOS
+                </button>
+            </nav>
+            <!--Serviços-->
+            <div style="margin-bottom: 800px;padding-top: 100px" id="servicos" class="container-fluid">
+                <div class="container">
+                    <h1 class="text-center">Serviços</h1>
+                </div>
+            </div><!--/Serviços-->
+            <!--Sobre-->
+            <div id="sobre">
+                
+            </div><!--/Sobre-->
+            <!--Portfólio-->
+            <div id="portfolio">
+                
+            </div><!--/Portfólio-->
+            <!--Contato-->
+            <div id="contato">
+                
+            </div><!--/Contato-->
         </div><!--/Cover Container-->
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/header-animate.min.js"></script>
         <script>
             $('body').scrollspy({ target: '#menu' });
         </script>
