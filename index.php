@@ -22,10 +22,14 @@
 
         <!--JS file-->
         <script src="js/scroll.js"></script>
+        <script src="js/toTop.js"></script>
 
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--Icon-->
         <link rel="icon" href="img/icon/DG.ico" />
@@ -69,35 +73,68 @@
                     <a id="button" class="mb-1 scroll" href="#contato" style="font-family: 'Russo One', sans-serif;color: black">
                         ENTRAR EM CONTATO
                     </a>
+                    <button class="mb-1" id="button" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        FAÇA UM ORÇAMENTO
+                    </button>
                 </div>
             </main><!--/Main-->
-            
+            <!--Nav-->
             <nav style="position: absolute;top: 100%;" class="nav nav-masthead justify-content-center navbar-dark bg-dark w-100">
                 <span style="font-size: 25px;color: #fff;" class="navbar-text p-3">
                     Está precisando de um site?
                 </span>
-                <button style="font-size: 14px;color: #fff;border: none;margin: 0;" class="px-5 bg-danger" id="button">
-                    FAÇA O ORÇAMENTO
+                <button style="font-size: 14px;border: none;margin: 0;" class="bg-danger text-white" id="button" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    FAÇA O ORÇAMENTO SEM NENHUM COMPROMISSO
                 </button>
-            </nav>
+            </nav><!--/Nav-->
+            <!--Modal de Orçamento-->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Faça o oraçamento do seu projeto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/Modal de Orçamento-->
             <!--Serviços-->
-            <div style="margin-bottom: 800px;padding-top: 100px" id="servicos" class="container-fluid">
+            <div style="padding-top: 105px;margin-bottom: 50%" id="servicos" class="container-fluid">
                 <div class="container">
-                    <h1 class="text-center">Serviços</h1>
+                    <h1>Serviços</h1>
                 </div>
             </div><!--/Serviços-->
             <!--Sobre-->
-            <div id="sobre">
-                
+            <div style="padding-top: 105px;margin-bottom: 50%" id="sobre" class="container-fluid">
+                <div class="container">
+                    <h1>Sobre</h1>
+                </div>
             </div><!--/Sobre-->
             <!--Portfólio-->
-            <div id="portfolio">
-                
+            <div style="padding-top: 105px;margin-bottom: 50%" id="portfolio" class="container-fluid">
+                <div class="container">
+                    <h1>Portfólio</h1>
+                </div>
             </div><!--/Portfólio-->
             <!--Contato-->
-            <div id="contato">
-                
+            <div style="padding-top: 105px;margin-bottom: 50%" id="contato" class="container-fluid">
+                <div class="container">
+                    <h1>Contato</h1>
+                </div>
             </div><!--/Contato-->
+            <!--Voltar para o topo-->
+            <span data-toggle="tooltip" data-placement="top" title="Voltar para o Topo" class="btn toTop text-white" style="bottom: 10px;right: 20px;position: fixed;cursor: pointer;display: block;background-color: #244965;border-radius: 30%">
+                <i style="font-size: 30px" class="fa fa-angle-double-up"></i>
+            </span><!--Voltar para o topo-->
         </div><!--/Cover Container-->
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
@@ -106,6 +143,9 @@
         <script src="js/header-animate.min.js"></script>
         <script>
             $('body').scrollspy({ target: '#menu' });
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
         </script>
     </body>
 </html>
