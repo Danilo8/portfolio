@@ -98,7 +98,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Modal body text goes here.</p>
+                            <p></p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
